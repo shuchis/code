@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>Stock Trading Calculator</title>
+<style>
+            table, th, td {
+                border: 1px solid black;
+            }
+</style>
+  </head>
+  <body>
+
+
+	<table>
+	  <tr>
+		<th>TICKER</th>
+		<th>PRICE</th>
+	  </tr>
+	  <tr>
+		<td>WIPRO</td>
+		<td id="wipro_price">298.45</td>
+	  </tr>
+	  <tr>
+		<td>INFY</td>
+		<td id="infy_price">949.95</td>
+	  </tr>
+	  <tr>
+		<td>TCS</td>
+		<td id="tcs_price">2713.70</td>
+	  </tr>
+	  <tr>
+		<td>TECHM</td>
+		<td id="techm_price">485.85</td>
+	  </tr>
+	</table>
+
+	<h2>Stock Trading</h2>
+	<form>
+		<table>
+	  	  <tr>
+			<th>Ticker</th>
+			<td><input id="t" type="text" list="companies" id="company_list" required></td>
+		  </tr>
+		  <tr>
+			<th>Quantity</th>
+			<td><input id="q" type="text"></td>
+		  </tr> 	
+		  <tr>
+			<td><input id="submit" type="submit" value="Submit" onclick="myFunc()"></td>
+		  </tr>
+		</table>
+	</form>
+	<datalist id="companies">
+		<option value="WIPRO"></option>
+		<option value="INFY"></option>
+		<option value="TCS"></option>
+		<option value="TECHM"></option>
+	</datalist>
+	<script src="js/scripts.js"></script>
+  </body>
+</html>

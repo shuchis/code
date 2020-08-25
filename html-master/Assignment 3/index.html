@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>Awesome Video Player</title>
+</head>
+<body>
+<nav>
+  <element id="element1" />
+  <pre><h1><img src= "ytplay.png" alt="Video Player" class="logo" height="42" width="42">Awesome Online Videos</h1></pre>
+  <element id="element2" />
+  <video id="myVideo"  class="video1">
+  <source src="https://www.w3schools.com/tags/mov_bbb.mp4" type="video/mp4">
+  <source src="" type="video/ogg">
+  Your browser does not support HTML5 video.
+  
+</video>
+  
+
+<br>
+
+<button onclick="playVid()" type="button" class="button1">Play Video</button>
+<button onclick="pauseVid()" type="button" class="button2">Pause Video</button><br> </span>
+<script> 
+var vid = document.getElementById("myVideo"); 
+
+function playVid() { 
+    vid.play(); 
+} 
+
+function pauseVid() { 
+    vid.pause(); 
+} 
+</script> 
+
+  <element id="element3" />
+</nav>
+</body>
+</html>
